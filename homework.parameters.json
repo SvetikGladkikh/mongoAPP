@@ -1,0 +1,26 @@
+{
+    "version": "1.1",
+    "parameters": [
+      {
+        "name": "test",
+        "description": "uses for test",
+        "isList": true,
+        "roles": ["admin", "user"],
+        "type": "instance",
+        "bundle": [
+          {
+            "path": [
+              {
+                "code": "11",
+                "value": "11"
+              }
+            ],
+            "values": [
+              "22",
+              "33"
+            ]
+          }
+        ]
+      }
+    ]
+}

@@ -1,6 +1,7 @@
 package classwork.da.jaxb;
 
-import classwork.entity.jaxb.Fallback;
+//import classwork.entity.jaxb.Fallback;
+import classwork.entity.serialize.Fallback;
 
 import java.io.FileInputStream;
 import java.io.IOException;

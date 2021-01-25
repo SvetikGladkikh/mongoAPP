@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name='JavaFileClass'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name='version' type='xs:string'/>
+                <xs:element name='parameters' type='JsonParameters' maxOccurs='unbounded'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name='JsonParameters'>
+        <xs:sequence>
+            <xs:element name='name' type='xs:string'/>
+            <xs:element name='description' type='xs:string'/>
+            <xs:element name='isList' type='xs:boolean'/>
+            <xs:element name='type' type='xs:string'/>
+            <xs:element name='roles' type='xs:string' maxOccurs='unbounded'/>
+            <xs:element name='bundle' type='Bundle' maxOccurs='unbounded'/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name='Bundle'>
+        <xs:sequence>
+            <xs:element name='values' type='xs:string' maxOccurs='unbounded'/>
+            <xs:element name='path' type='Path' maxOccurs='unbounded'/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Path">
+        <xs:sequence>
+            <xs:element name='code' type='xs:string'/>
+            <xs:element name='value' type='xs:string'/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

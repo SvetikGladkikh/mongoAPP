@@ -5,9 +5,6 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import java.io.File;
 
-/** Восстановление данных из сохраненного состояния в файле temp.jaxb.out
- *  Сохраниение в json формате в файл result_parameters.jaxb.json
- * */
 public class WriteXml {
 
     public static final String SOURCE_FILE = "temp.jaxb.out";

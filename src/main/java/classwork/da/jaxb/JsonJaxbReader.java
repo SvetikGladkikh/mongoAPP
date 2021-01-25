@@ -1,6 +1,7 @@
 package classwork.da.jaxb;
 
-import classwork.entity.jaxb.Fallback;
+//import classwork.entity.jaxb.Fallback;
+import classwork.entity.serialize.Fallback;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;

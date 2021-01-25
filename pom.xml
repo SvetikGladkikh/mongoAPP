@@ -83,6 +83,28 @@
         <finalName>sup-generator</finalName>
 
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>jaxb2-maven-plugin</artifactId>-->
+<!--                <version>2.3</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>xjc</id>-->
+<!--                        <goals>-->
+<!--                            <goal>xjc</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <packageName>classwork.entity.jaxb</packageName>-->
+<!--                    <sources>-->
+<!--                        <source>src/main/resources/generated/objects_schema.xsd</source>-->
+<!--                    </sources>-->
+<!--                    <xjbSources>-->
+<!--                        <xjbSource>src/main/resources/generated/global.xjb</xjbSource>-->
+<!--                    </xjbSources>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
@@ -96,9 +118,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <packageName>classwork.entity.jaxb</packageName>
+                    <packageName>homeworkv3.entity.jaxb</packageName>
                     <sources>
-                        <source>src/main/resources/generated/objects_schema.xsd</source>
+                        <source>src/main/resources/generated/package.xsd</source>
                     </sources>
                     <xjbSources>
                         <xjbSource>src/main/resources/generated/global.xjb</xjbSource>
@@ -113,19 +135,19 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.0.2</version>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <target>1.8</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>sonar-maven-plugin</artifactId>-->
+<!--                <version>3.0.2</version>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 </project>

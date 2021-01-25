@@ -2,7 +2,8 @@ package classwork.util.jaxb;
 
 import classwork.da.jaxb.JaxbSerializeWriter;
 import classwork.da.jaxb.JsonJaxbReader;
-import classwork.entity.jaxb.Fallback;
+//import classwork.entity.jaxb.Fallback;
+import classwork.entity.serialize.Fallback;
 
 import java.io.IOException;
 
